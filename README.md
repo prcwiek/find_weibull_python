@@ -5,9 +5,9 @@ k shape factor and c scale factor. Usage:<br><br>
 python find_weibull.py <i>filename</i> -p<br><br>
 where:<br>
 <i>filename</i> is a text file from which program loads the first column with the header.<br>
--p parameter if plot should be preparded and saved<br><br>
-python data_example/WS125.txt -p<br><br>
-
+<i>-p</i> parameter if plot should be preparded and saved<br><br>
+python find_weibull.py data_example/WS125.txt -p<br>
+python find_weibull.py -p<br>
 
 The file <i>WS125.txt</i> with the example wind measurement data set comes
 from the measurement mast US Virgin Islands St. Thomas Bovoni and
