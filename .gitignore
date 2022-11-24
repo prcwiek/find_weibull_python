@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# plot files
+*.png
+
+# spyder files
+.spyproject/
