@@ -146,7 +146,7 @@ if make_plot:
     ddist['probability'] = ddist['wind_speed'].apply(lambda x: weibull(c, k, x))
     fig, ax = plt.subplots()
     
-    ax.hist(ws.iloc[0:], bins=30, density=True, rwidth=1, align='left',
+    ax.hist(ws.iloc[0:], bins=25, density=True, rwidth=1, align='left',
             color='#FFA500', edgecolor='grey')
     
     ax.plot(ddist.wind_speed, ddist.probability, color='#A52A2A',
@@ -154,7 +154,7 @@ if make_plot:
     
     ax.set_title("Probability histogram and Weibull distribution")
     ax.set_xlabel("Wind speed (m/s)")
-    ax.set_ylabel("Probability (%)")
+    ax.set_ylabel("Probability")
     ax.legend()
     
     plt.xlim(0, 25)
